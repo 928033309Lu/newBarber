@@ -163,8 +163,15 @@ Page({
   },
   // 返回首页
   onComeBack () {
-    wx.navigateTo({
-      url:"/pages/homepage/homepage"
+    wx.navigateToMiniProgram({
+      appId: 'wx436660de2086dcbd',
+      path: 'pages/homepage/homepage',
+      success(res) {
+        // 打开成功
+      },
+      fail(err) {
+        console.log(err)
+      }
     })
   },
   /**

@@ -1,0 +1,49 @@
+<view class="collect-panel">
+  <view class="collect-header" id="china-header">
+    <text>现有确诊</text>
+    <text>疑似病例</text>
+    <text>死亡病例</text>
+    <text>治愈病例</text>
+    <text>重症病例</text>
+  </view>
+  <view class="collect-content" id="china-content">
+    <text class="txt1">{{china_body && china_body.todayStatictic.confirmedNum}}</text>
+    <text class="txt2">{{china_body && china_body.todayStatictic.suspectedNum}}</text>
+    <text class="txt3">{{china_body && china_body.todayStatictic.deadNum}}</text>
+    <text class="txt4">{{china_body && china_body.todayStatictic.curedNum}}</text>
+    <text class="txt5">{{china_body && china_body.todayStatictic.seriousNum}}</text>
+  </view>
+
+  <view class="details-title" id="china-details-title">国内各地区疫情统计汇总：</view>
+  <scroll-view scroll-y class="details-content" style="height: {{scrollHeight*2}}rpx">
+    <view class="table" wx:if="{{china_body}}">
+      <view class="tr tr-header">
+        <view class="th">疫情地区</view>
+        <view class="th">总确诊病例</view>
+        <view class="th ">疑似病例</view>
+        <view class="th ">治愈</view>
+        <view class="th ">死亡</view>
+      </view>
+      <block>
+        <view class="tr-box" wx:for="{{china_body.todayDetailList}}" wx:key="index">
+          <view class="tr">
+            <view class="td td-icon ellipsis" bindtap='onChangeCity' data-item="{{item}}">{{item.provinceName}} <view class="iconfont icon-sanjiaoxing"></view></view>
+            <view class="td td3">{{item.confirmedNum}}</view>
+            <view class="td td3">{{item.suspectedNum}}</view>
+            <view class="td td3">{{item.curedNum}}</view>
+            <view class="td td3">{{item.deadNum}}</view>
+          </view>
+          <view wx:if="{{item.visible}}" class="tr-city">
+            <view class="tr" wx:for="{{item.cityList}}" wx:key="idx" wx:for-index="idx" wx:for-item="elem">
+              <view class="td">{{elem.cityName}}</view>
+              <view class="td td3">{{elem.confirmedNum}}</view>
+              <view class="td td3">{{elem.suspectedNum}}</view>
+              <view class="td td3">{{elem.curedNum}}</view>
+              <view class="td td3">{{elem.deadNum}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>

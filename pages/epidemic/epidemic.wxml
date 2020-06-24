@@ -1,0 +1,21 @@
+<view class="epidemic">
+  <view class='comeback' bindtap='onComeBack'><text class="iconfont icon-zhuye"></text></view>
+  <view class="header">新冠疫情</view>
+  <view class="content">
+    <view class="collect" id="collect">
+      <view id="collect-header">
+        <view class="time">数据更新至： {{china_body.updateTime}}</view>
+        <view class="collect-title">
+          <text wx:for="{{navList}}" wx:key="index" class="{{item.id == active ? 'active' : ''}}" bindtap='onChangeNav' data-item="{{item}}">{{item.name}}</text>
+        </view>
+      </view>
+      <!-- 国内 -->
+      <china-panel wx:if="{{active == 1}}" china_body="{{china_body}}"></china-panel>
+      <!-- 国外 -->
+      <foreign-panel wx:if="{{active == 2}}"></foreign-panel>
+    </view>
+
+
+
+  </view>
+</view>

@@ -1,0 +1,119 @@
+<!--pages/home/home.wxml-->
+<view class='box'>
+  <view class='comeback' bindtap='onComeBack'><text class="iconfont icon-zhuye"></text></view>
+<!-- 上面模块 -->
+  <view class='header'>
+  <!-- 店铺头像 -->
+    <view class='userinfo'>
+      <image bindtap='imgYu' data-id="3" src='{{dataSrc[3].src}}'></image>
+      <view class='txt'>小玉理发店(广州南沙店)</view>
+    </view>
+<!-- 地址 -->
+    <view class='nav'>
+      <view class='one'>
+        <view>
+          <text class="iconfont icon-dingwei"></text>
+          <view class='aaa'>何仙姑街8号( 时代长岛二期后、南沙市政旁 )</view>
+        </view>
+        <text class="iconfont icon-you"></text>
+        <button bindtap='onTu' class='btn1'>透明定位</button>
+      </view>
+      <view class='one two'>
+        <view>
+          <text class="iconfont icon-shijian"></text>
+          <text>09:45 - 21:45</text>
+          <text style='margin-left:60rpx;'>￥15起</text>
+        </view>
+        
+      </view>
+      <view class='one ser'>
+        <view>
+          <text class="iconfont icon-dianhua"></text>
+          <text>13226669811</text>
+        </view>
+       <text class="iconfont icon-you"></text>
+        <button bindtap='onTel' class='btn2'>透明定位</button>
+      </view>
+
+      <view class='one' bindtap='godetails'>
+        <view>
+          <text class="iconfont icon-gongjiaoche"></text>
+          <text>公交 / 自驾 / 步行 （ 点击查看 ）</text>
+        </view>
+        <text class="iconfont icon-you"></text>
+      </view>
+    </view>
+  </view>
+
+<!-- 下面模块 -->
+  <view class='footer'>
+    <view>店铺图片</view>
+    <view class='lis'>
+      <view wx:for="{{dataSrc}}" wx:key="index">
+        <image bindtap='imgYu' data-id="{{item.id}}" mode='widthFix' src='{{item.src}}'></image>
+      </view>
+     
+    </view>
+  </view>
+
+<!-- 遮罩 -->
+  <view class='zhezhao' wx:if="{{isShow}}">
+    <button class='zhebtn' bindtap='zhezhao'>返回</button>
+    <button class='zhebtnjian' bindtap='jian' wx:if="{{num>=1}}">-</button>
+    <button class='zhebtnjia' bindtap='jia'>+</button>
+
+    <view class='imgbox'>
+     <view wx:for="{{dataSrc}}" wx:key="index">
+        <image bindtap='imgYu' 
+        data-index="{{index}}" 
+        mode='widthFix' 
+        wx:if='{{ind == index}}'
+        style='width:{{100+num}}%;'
+        src='{{item.src}}'></image>
+      </view>
+    </view>
+  </view>
+<!-- 分享按钮 -->
+  <view class='qdbox' style='background:{{col}};'>
+    <image class='qd' mode='widthFix'  src='{{baseOther.qd}}'></image>
+    <view>分享优惠</view>
+    <!-- <button open-type='share' class='fenbtn'>分享</button> -->
+    <button bindtap='youquanOpen' class='fenbtn'>朋友圈</button>
+  </view>
+
+<!-- 分享的图片 -->
+  <view wx:if="{{isFenShow}}" bindtap='youquanOpen' catchlongpress='baocun'  class='youimgbox'>
+    <image class='bei' src='{{baseOther.bizhi}}'></image>
+    <view class='divbox'>
+        <view class='div'>
+          <image class='youimg' mode='widthFix' src='/img/yyy.jpg'></image>
+          <image class='txtimg' mode='widthFix' src='/img/sss.png'></image>
+        </view>
+        <view class='bott'>
+          <view>扫码查看<text style='color:red;'> ↖ 小程序</text></view>
+          <text style='color:blue;'>实惠老店！</text>师傅30+年剪发经验
+        </view>
+    </view> 
+  </view>
+
+  <!-- 遮罩 -->
+  <view class='loading' wx:if="{{isloading}}">
+      <view class='loading_txt'>
+        点击这里进入小程序 ↗ 
+        <view bindtap='goChange' class='loading_btn'>Go</view>
+      </view>
+
+      <view class='loading_content'>
+        <view class='loading_title'>最新优惠！！！ </view>
+        <view class='smm'>
+        实惠老店，无需办卡，分享即可优惠<text style='color:red;'> 2--5 </text>元！仅限于节假日生效！
+        </view>
+        <text class='conn'>
+            获取优惠步骤：
+            1、把小程序分享到微信群
+            2、点击分享优惠，截图分享到朋友圈
+        </text>
+      </view>
+  </view>
+
+</view>

@@ -1,0 +1,71 @@
+/* pages/idioms/idioms.wxss */
+.idioms-panel{
+  height: 100%;
+}
+.radio-box{
+  font-size: 32rpx;
+  display: flex;
+  padding: 20rpx 0;
+}
+.radio-box view{
+  padding-left: 20rpx;
+}
+.radio-box radio .wx-radio-input {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+.search-box{
+  padding: 40rpx;
+  display: flex;
+}
+.search-box .btn{
+  padding: 0;
+  margin: 0;
+  width: 100rpx;
+  height: 66rpx;
+  font-size: 26rpx;
+  line-height: 66rpx;
+  background: rgb(11, 163, 245);
+  color: #fff;
+}
+.search-box input{
+  flex: 1;
+}
+.msg-box{
+  font-size: 28rpx;
+  padding: 30rpx;
+}
+.msg-title{
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #333;
+}
+.msg-spell{
+  font-size: 30rpx;
+  color: #999;
+}
+.msg-content, .msg-derivation, .msg-samples{
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 20rpx;
+  margin: 10rpx 0;
+}
+.errorMsg{
+  padding: 30rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+
+/* 选中后 背景及勾 的样式 */
+.radio-box radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  line-height: 34rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #fff;
+  background: #10aeb5;
+  transform: translate(-50%, -50%) scale(1);
+}

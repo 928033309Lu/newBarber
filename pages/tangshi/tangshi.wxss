@@ -1,0 +1,40 @@
+/* pages/tangshi/tangshi.wxss */
+.tangshi{
+  height: 100%;
+  padding: 20rpx 40rpx;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+}
+.btn{
+  padding: 0;
+  margin: 0;
+  width: 100rpx;
+  height: 66rpx;
+  font-size: 26rpx;
+  line-height: 66rpx;
+  background: rgb(11, 163, 245);
+  color: #fff;
+}
+.searchbox{
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.contentbox{
+  flex: 1;
+  overflow: auto;
+}
+.menuLi{
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.name{
+  padding-left: 30rpx;
+}
+.author{
+  color: #999;
+  font-size: 24rpx;
+}

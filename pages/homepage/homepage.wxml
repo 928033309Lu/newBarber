@@ -1,0 +1,8 @@
+<view class="homepage">
+  <view wx:for="{{menuList}}" wx:key="index" class="pagesBox">
+    <view bindtap='onChangePages' data-item="{{item}}">
+      <text class="{{item.icon}}"></text>
+      <text class="name">{{item.name}}</text>
+    </view>
+  </view>
+</view>

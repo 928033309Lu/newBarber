@@ -1,0 +1,14 @@
+<view class="tangshiDetails" wx:if="{{detailsData}}">
+  <view>
+    <view class="name">题目： {{detailsData && detailsData.title}}</view>
+    <view class="author">作者： {{detailsData && detailsData.author}}</view>
+  </view>
+  <view class="content">
+    <rich-text nodes="{{detailsData && detailsData.content}}"></rich-text>
+  </view>
+  <view class="jians">
+    <view class="ss">鉴赏：</view>
+    <rich-text nodes="{{detailsData && detailsData.appreciation}}"></rich-text>
+  </view>
+</view>
+<view class="tangshiDetails" wx:if="{{!detailsData}}">没有信息</view>

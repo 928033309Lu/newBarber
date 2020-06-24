@@ -1,0 +1,7 @@
+<view class="wallpaper-panel">
+  <view class="wallpaper-content" wx:if="{{wallpaper_body}}">
+    <view class="tip">{{wallpaper_body.data.copyright}}</view>
+    <image src="{{wallpaper_body.data.img_1366}}"></image>
+    <image src="{{wallpaper_body.data.img_1920}}" ></image>
+  </view>
+</view>

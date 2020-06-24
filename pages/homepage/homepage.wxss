@@ -1,0 +1,25 @@
+/* pages/homepage/homepage.wxss */
+.homepage{
+  display: flex;
+  flex-flow: wrap;
+}
+.pagesBox{
+  width: 160rpx;
+  text-align: center;
+  font-size: 26rpx;
+  padding: 20rpx;
+}
+.pagesBox view{
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  color: #333;
+  border-radius: 10rpx;
+}
+.pagesBox .name{
+  padding-top: 10rpx;
+  display: block;
+}

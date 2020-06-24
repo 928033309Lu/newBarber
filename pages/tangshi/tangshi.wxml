@@ -1,0 +1,14 @@
+<view class="tangshi">
+  <view class="searchbox">
+    <input class="weui-input" value="{{value}}" bindinput="bindKeyInput" placeholder="请输入关键字" /> <button class="btn" bindtap="onSearch">查询</button>
+  </view>
+  <view class="contentbox">
+    <view wx:for="{{menuList}}" wx:key="index" class="menuLi" bindtap='onClickList' data-item="{{item}}">
+      <text>
+        <text>{{index + 1}}</text>
+        <text class="name">{{item.name}}</text>
+      </text>
+      <text class="author">作者：{{item.author}}</text>
+    </view>
+  </view>
+</view>

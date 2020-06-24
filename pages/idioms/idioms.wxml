@@ -1,0 +1,21 @@
+<view class="idioms-panel">
+  <radio-group bindchange="radioChange" class="radio-box">
+    <view wx:for="{{radioList}}" wx:key="index">
+      <radio checked="{{item.checked}}" value="{{item.code}}" />{{item.value}}
+    </view>
+  </radio-group>
+  <view class="search-box">
+    <input value="{{keyword}}" bindinput="bindKeyInput" placeholder="请输入关键字" placeholder-style="font-size: 30rpx" style="font-size: 30rpx"></input>
+    <button class="btn" bindtap="onSearch">查询</button>
+  </view>
+
+  <view wx:if="{{msgData}}" class="msg-box">
+    <view class="msg-title">成语名字： {{msgData.title}}</view>
+    <view class="msg-spell">拼写读音： {{msgData.spell}}</view>
+    <view class="msg-content">解释： {{msgData.content}}</view>
+    <view class="msg-derivation">出自典故： {{msgData.derivation}}</view>
+    <view class="msg-samples">例子： {{msgData.samples}}</view>
+  </view>
+  <view wx:if="{{!msgData}}" class="errorMsg"> {{errorMsg}} </view>
+</view>
+

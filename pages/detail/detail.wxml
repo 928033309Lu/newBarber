@@ -1,0 +1,34 @@
+<!--pages/detail/detail.wxml-->
+<view class='detail'>
+  <text>公交（ <text style='color:red;'>白藤滘站</text> ）</text>
+  <view>
+    <text>途经公交：
+    18路、19路、3路、53路、62路、番143、G4路
+    
+    </text>
+  </view>
+  <text>自驾线路</text>
+  <view>
+    <text><text style='color:red;'>西往东方向</text> —— 既金州往虎门渡口方向：
+    在南沙街道办事处红路灯左转进去，沿时代长岛后面的那马路一直走，尽头便是
+
+    <text style='color:red;'>东往西方向</text> —— 既虎门渡口往金州方向：
+    时代长岛路口右转进去里面村子，第一个路口右拐直走便是
+
+    </text>
+  </view>
+  <text>步行（1.5公里以内建议步行）</text>
+  <view>
+    位于时代长岛二期后、南沙市政旁，时代长岛路口进去右拐直走即可......
+    详情点击地图一看便知
+
+    <text>
+
+    步行的好处：
+    一、防止脏腑各方面的疾病
+    二、预防中风，对血管有好处
+    三、增加大脑的一些功能
+    四、疏通经络，可以保养自身
+    </text>
+  </view>
+</view>

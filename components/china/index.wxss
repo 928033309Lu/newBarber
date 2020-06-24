@@ -1,0 +1,82 @@
+.collect-panel{
+  height: 100%;
+}
+.collect-content, .collect-header{
+  display: flex;
+}
+.collect-content text, .collect-header text{
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.txt1, .txt2, .txt3, .txt4, .txt5{
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.txt1, .td1{
+  color: #ff6a57;
+}
+.txt2, .td2{
+  color: #4d5054;
+}
+.txt3, .td3{
+  color: #4d5054;
+}
+.txt4, .td4{
+  color: #10aeb5;
+}
+.txt5, .td5{
+  color: #545499;
+}
+.table {
+  width: 100%;
+  border: none;
+  border-radius: 10rpx;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10rpx 0;
+}
+.tr-box{
+  width: 100%;
+}
+.th {
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #f5f7fa;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+.td{
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #f5f7fa;
+  text-align: center;
+}
+.tr-city .td{
+  background: #fff;
+}
+.details-title{
+  font-size: 28rpx;
+  height: 80rpx;
+  line-height: 100rpx;
+}
+.details-content .table{
+  padding-bottom: 120rpx;
+}
+.td-icon{
+  position: relative;
+  color: #10aeb5;
+}
+.icon-icon_sanjiaoxing{
+  position: absolute;
+  left: 0;
+  top: 24rpx;
+}

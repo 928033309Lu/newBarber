@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "my-imgShow": "../../components/imgShow/index"
+  }
+}

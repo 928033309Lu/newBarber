@@ -1,0 +1,167 @@
+/* pages/home2/home2.wxss */
+.home2{
+  height: 100%;
+}
+.home2>view{
+  height: 100%;
+  position: relative;
+}
+.imgBox image{
+  width: 100%;
+}
+.home2 .content{
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 30%;
+  background: rgba(255,255,255,1);
+  border-radius: 40rpx;
+}
+.home2 .imgList{
+  width: 110rpx;
+  height: 60rpx;
+  position: absolute;
+  right: 20rpx;
+  top: -80rpx;
+  z-index: 111;
+  background: rgba(0,0,0,0.5);
+  border-radius: 8rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home2 .imgList image{
+  width: 55rpx;
+  height: 50rpx;
+  margin-right: 4rpx;
+}
+.home2 .title{
+  height: 140rpx;
+  line-height: 140rpx;
+  font-size: 44rpx;
+  font-weight: bold;
+  padding-left: 40rpx;
+}
+.home2 .list{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  display: flex;
+  color: #333;
+  padding: 0 20rpx;
+}
+.home2 .list .iconfont{
+  color: #333;
+}
+.home2 .icon-you{
+  transform: scale(0.9);
+  position: relative;
+  top: 1px;
+}
+.home2 .icon-dingwei{
+  font-size: 44rpx;
+  transform: scale(0.96);
+}
+.home2 .icon-tiaozhuan{
+  transform: scale(1.2);
+}
+.home2 .icon-yingye1{
+  transform: scale(0.9);
+  margin-right: 2px;
+  position: relative;
+  top: -2px;
+  left: 2rpx;
+}
+.home2 .icon-dianhua{
+  transform: scale(1.1);
+  position: relative;
+  left: 1px;
+}
+.home2 .icon-gongjiaoche{
+  position: relative;
+  top: 2px;
+  left: 1px;
+}
+.home2 .con{
+  padding-left: 10rpx;
+}
+.home2 .list .view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home2 .money{
+  padding: 0 10rpx 0 50rpx;
+  color: blue;
+}
+.home2 .footer{
+  padding-top: 40rpx;
+  text-align: center;
+}
+.home2 .footer view{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1px solid rgba(204, 204, 204, 0.289);
+  border-bottom: 1px solid rgba(204, 204, 204, 0.289);
+}
+/* .home2 .title{
+  background: -webkit-gradient(linear, left 0, right 0, from(rgb(166, 4, 249)), to(rgb(251, 223, 11)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.home2 .youimgbox{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  left: 0;
+  top:0;
+  z-index: 999;
+}
+.home2 .youimgbox .divbox{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 7;
+}
+.home2 .youimgbox .div{
+  display: flex;
+  background: #F4F4F4;
+  width: 100%;
+}
+
+.home2 .youimgbox .bott{
+  width: 100%;
+  background:#F4F4F4;
+  font-size: 32rpx;
+  color: #000;
+  padding: 10rpx 20rpx;
+}
+
+.home2 .youimgbox .youimg{
+  width: 30%;
+}
+.home2 .youimgbox .txtimg{
+  width: 70%;
+}
+.home2 .bei{
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  top:0;
+  width:100%;
+  height: 100%;
+}
+.home2 .imgShow{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background:rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}

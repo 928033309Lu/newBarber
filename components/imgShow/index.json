@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {},
+  "navigationBarTitleText": "识别手势",
+ 
+  "navigationBarTextStyle":"black",
+ 
+  "navigationBarBackgroundColor": "#FFF",
+ 
+  "disableScroll": true
+}

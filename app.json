@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/home2/home2",
+    "pages/detail/detail"
   ],
   "permission": {
     "scope.userLocation": {

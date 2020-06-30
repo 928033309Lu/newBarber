@@ -12,7 +12,6 @@
       <!-- 国内 -->
       <china-panel wx:if="{{active == 1}}" china_body="{{china_body}}"></china-panel>
       <!-- 国外 -->
-      <foreign-panel wx:if="{{active == 2}}"></foreign-panel>
     </view>
 
 

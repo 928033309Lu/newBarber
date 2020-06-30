@@ -3,7 +3,7 @@ page{
   height: 100%;
   
 }
-.comeback{
+.box .comeback{
   position: absolute;
   right: 20rpx;
   top: 20rpx;
@@ -14,8 +14,9 @@ page{
 .box{
   height: 100%;
   width: 100%;
-  background: #F6F8F8;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .zhezhao{
   position: fixed;
@@ -60,8 +61,17 @@ page{
 
 .header{
   height: 640rpx;
-  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.5));
+  background: linear-gradient(rgba(194, 75, 211, 1),rgba(18, 230, 177, 0.5));
   position: relative;
+}
+.bgheader{
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .header .userinfo{
   position: absolute;
@@ -143,6 +153,13 @@ page{
   width: 100%;
   opacity: 0;
 }
+.footer{
+  flex: 1;
+  background: linear-gradient(rgba(18, 230, 177, 0.5),rgba(18, 208, 233, 0.451));
+}
+.d{
+  font-weight: bold;
+}
 .footer>view:first-child{
   padding: 10rpx 20rpx 0 20rpx;
   color: gray;
@@ -161,20 +178,21 @@ page{
 }
 .lis>view>image{
   width: 100%;
+  border-radius: 8rpx;
 }
 
 /* 分享 */
-.qdbox{
+.box .qdbox{
   position: fixed;
   bottom: 100rpx;
-  right: 60px;
-  width: 80rpx;
+  right: 60rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  width: 100rpx;
+  font-size: 34rpx;
   text-align: center;
-
-transition: 0.5s;
-  padding: 10rpx 16rpx;
-  border-radius: 20rpx;
-  /* background: rgba(0, 0, 0, 0.3); */
+  transition: 0.5s;
+  border-radius: 10rpx;
 }
 .fenbtn{
   position: fixed;
@@ -183,13 +201,6 @@ transition: 0.5s;
   width: 80rpx;
   height: 100rpx;
   opacity: 0;
-}
-.qdbox view{
-  width: 120rpx;
-  margin-left: -20rpx;
-  font-size: 20rpx;
-  color: red;
-  font-weight: bold;
 }
 .qd{
   width: 100%;
@@ -294,4 +305,14 @@ position: absolute;
   font-size: 28rpx;
   position: relative;
   top: 10rpx;
+}
+
+.box .imgShow{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background:rgba(0, 0, 0, 1);
+  z-index: 9999;
 }

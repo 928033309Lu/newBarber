@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "疫情实时大数据报告",
   "usingComponents": {
-    "foreign-panel": "../../components/foreign/index",
     "china-panel": "../../components/china/index"
   }
 }

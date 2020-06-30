@@ -6,7 +6,7 @@
     <view class="content">
       <view class="imgList" bindtap="onOpenImgList"> <image src='/img/tupian.png'></image> {{dataSrc.length}}</view>
 
-      <view class="title">小玉理发店（南沙店）</view>
+      <view class="title">小玉理发店</view>
       <view class='list'>
         <view class='ellipsis view'>
           <text class="iconfont icon-yingye1"></text>
@@ -36,13 +36,13 @@
           <text class="iconfont icon-you"></text>
         </view>
       </view>
-      <view class='list' bindtap='onMieHome'>
+      <!-- <view class='list' bindtap='onMieHome'>
         <view class='ellipsis view'>
           <text class="iconfont icon-tiaozhuan"></text>
           <text class="con">乜都有小助手</text>
           <text class="iconfont icon-you"></text>
         </view>
-      </view>
+      </view> -->
       <view class="footer">
         <view bindtap="onShare">分享</view>
       </view>

@@ -6,13 +6,27 @@ Page({
    * 页面的初始数据
    */
   data: {
+    imglistSow: false,
     isShow:false,
     isFenShow:false,
     isloading:true,
     col:"rgba(0, 0, 0, 0.1)",
-    ind:"",
+    ind: 0,
     num:0,
     dataSrc: []
+  },
+  myComeback () {
+    this.setData({
+      imglistSow: false
+    })
+  },
+  onOpenImgList (e) {
+    let id = e.currentTarget.dataset.id
+    // console.log(id)
+    this.setData({
+      ind : id,
+      imglistSow: true
+    })
   },
   //进入小程序
   goChange(){

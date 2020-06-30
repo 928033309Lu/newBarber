@@ -18,6 +18,9 @@ Component({
 	properties: {
 		dataSrc: {
 			type: Object
+		},
+		index: {
+			type: Number
 		}
 	},
 	data: {
@@ -29,6 +32,13 @@ Component({
 		top: 600,
 		scale: 1,
 		rotate: 0
+	},
+	ready () {
+		if (this.data.index) {
+			this.setData({
+				ind: this.data.index
+			})
+		}
 	},
 	methods: {
     onNext () {

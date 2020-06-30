@@ -1,14 +1,18 @@
 <!--pages/home/home.wxml-->
 <view class='box'>
-  <view class='comeback' bindtap='onComeBack'><text class="iconfont icon-zhuye"></text></view>
-<!-- 上面模块 -->
+  <!-- 弹框类 -->
+  <my-imgShow class="imgShow" wx:if="{{imglistSow}}" dataSrc="{{dataSrc}}" index="{{ind}}" bind:myComeback="myComeback"></my-imgShow>
+  <my-redPacket></my-redPacket>
+  <!-- a -->
+  <view class='comeback' bindtap='onComeBack'><text class="iconfont icon-tiaozhuan"></text></view>
+  <!-- 上面模块 -->
   <view class='header'>
   <!-- 店铺头像 -->
     <view class='userinfo'>
-      <image bindtap='imgYu' data-id="3" src='{{dataSrc[3].src}}'></image>
+      <image src='../../img/logo.png'></image>
       <view class='txt'>小玉理发店(广州南沙店)</view>
     </view>
-<!-- 地址 -->
+  <!-- 地址 -->
     <view class='nav'>
       <view class='one'>
         <view>
@@ -45,18 +49,18 @@
     </view>
   </view>
 
-<!-- 下面模块 -->
+  <!-- 下面模块 -->
   <view class='footer'>
-    <view>店铺图片</view>
+    <view class="d">店铺图片</view>
     <view class='lis'>
       <view wx:for="{{dataSrc}}" wx:key="index">
-        <image bindtap='imgYu' data-id="{{item.id}}" mode='widthFix' src='{{item.src}}'></image>
+        <image bindtap='onOpenImgList' data-id="{{item.id}}" mode='widthFix' src='{{item.src}}'></image>
       </view>
      
     </view>
   </view>
 
-<!-- 遮罩 -->
+  <!-- 遮罩 -->
   <view class='zhezhao' wx:if="{{isShow}}">
     <button class='zhebtn' bindtap='zhezhao'>返回</button>
     <button class='zhebtnjian' bindtap='jian' wx:if="{{num>=1}}">-</button>
@@ -73,15 +77,12 @@
       </view>
     </view>
   </view>
-<!-- 分享按钮 -->
-  <view class='qdbox' style='background:{{col}};'>
-    <image class='qd' mode='widthFix'  src='{{baseOther.qd}}'></image>
-    <view>分享优惠</view>
-    <!-- <button open-type='share' class='fenbtn'>分享</button> -->
-    <button bindtap='youquanOpen' class='fenbtn'>朋友圈</button>
+  <!-- 分享按钮 -->
+  <view class='qdbox' style='background:{{col}};' bindtap='youquanOpen'>
+    分享
   </view>
 
-<!-- 分享的图片 -->
+  <!-- 分享的图片 -->
   <view wx:if="{{isFenShow}}" bindtap='youquanOpen' catchlongpress='baocun'  class='youimgbox'>
     <image class='bei' src='{{baseOther.bizhi}}'></image>
     <view class='divbox'>
@@ -96,24 +97,6 @@
     </view> 
   </view>
 
-  <!-- 遮罩 -->
-  <view class='loading' wx:if="{{isloading}}">
-      <view class='loading_txt'>
-        点击这里进入小程序 ↗ 
-        <view bindtap='goChange' class='loading_btn'>Go</view>
-      </view>
-
-      <view class='loading_content'>
-        <view class='loading_title'>最新优惠！！！ </view>
-        <view class='smm'>
-        实惠老店，无需办卡，分享即可优惠<text style='color:red;'> 2--5 </text>元！仅限于节假日生效！
-        </view>
-        <text class='conn'>
-            获取优惠步骤：
-            1、把小程序分享到微信群
-            2、点击分享优惠，截图分享到朋友圈
-        </text>
-      </view>
-  </view>
+ 
 
 </view>

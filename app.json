@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home2/home2",
+    "pages/home/home",
     "pages/detail/detail",
     "pages/youhui/youhui"
   ],
@@ -12,7 +12,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "全部应用",
+    "navigationBarTitleText": "美容美发",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

@@ -33,9 +33,16 @@ Component({
 	methods: {
     onNext () {
       let num = this.data.ind >= this.data.dataSrc.length -1 ? 0 : this.data.ind += 1
-      console.log(num)
+      // console.log(num)
       this.setData({
-        ind: num
+				ind: num,
+				msg: '',
+				width: 0,
+				height: 0,
+				left: 375,
+				top: 600,
+				scale: 1,
+				rotate: 0
       })
     },
     onComeback () {

@@ -1,0 +1,9 @@
+<view wx:if="{{redPacketVisible}}" class="redPacketClass">
+  <image src="/img/guanbi.png" class="guanbi" bindtap="onCloseBar"></image>
+  <image src="/img/redbag.png" class="redbag" bindtap="onSale"></image>
+
+  <view class="red-content" bindtap="onSale">
+    <view class="name">{{festival}}</view>
+    <view>优惠</view>
+  </view>
+</view>

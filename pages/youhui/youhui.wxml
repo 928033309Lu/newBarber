@@ -1,0 +1,23 @@
+<view class="festivalbox">
+  <view wx:if="{{festival == '建党节'}}" class="festival">
+    <text>
+    毛泽东同志于在《论持久战》一文中提出：“今年七月一日，是中国共产党建立的十七周年纪念日”。这是中央领导同志第一次明确提出“七一”是党的诞生纪念日。
+    </text>
+    <view class="name">今天是 <text>{{festival}}</text></view>
+  </view>
+  <view wx:if="{{festival == '七夕节'}}" class="festival">
+    <text>
+    农历七月初七是七夕节，又名乞巧节、七巧节或七姐诞。七夕始于汉朝，是流行于中国及汉字文化圈诸国的传统文化节日。相传农历七月七日夜或七月六日夜妇女在庭院向织女星乞求智巧，故称为“乞巧”。其起源于对自然的崇拜及妇女穿针乞巧，后被赋予了牛郎织女的传说使其成为象征爱情的节日。七夕节妇女穿针乞巧、祈祷福禄寿、礼拜七姐、陈列花果、女红等诸多习俗影响至日本、朝鲜半岛、越南等汉字文化圈国家。2006年5月20日，七夕节被国务院列入第一批国家级非物质文化遗产名录。
+    </text>
+    <view class="name">今天是 <text>{{festival}}</text></view>
+  </view>
+
+
+
+
+
+<!-- 固定 -->
+  <view class="li"> 小玉理发店<text class="bb"> 优惠 </text>： 满<text class="span4"> 50</text>元<text class="span2"> </text><text class="span3"> 减 5 </text>元！</view>
+  <view class="li">你知道吗？<text class="span1">单剪才15元!!!</text></view>
+  <view class="li">带上小伙伴组队走起吧！</view>
+</view>

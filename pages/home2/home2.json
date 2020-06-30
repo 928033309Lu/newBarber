@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "my-imgShow": "../../components/imgShow/index"
+    "my-imgShow": "../../components/imgShow/index",
+    "my-redPacket": "../../components/redPacket/index"
   }
 }

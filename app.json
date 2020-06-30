@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/home2/home2",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/youhui/youhui"
   ],
   "permission": {
     "scope.userLocation": {

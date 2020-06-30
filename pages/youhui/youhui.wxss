@@ -1,0 +1,30 @@
+/* pages/youhui/youhui.wxss */
+.festivalbox{
+  font-size: 30rpx;
+  padding: 20rpx 40rpx;
+}
+.festivalbox .name{
+  margin: 40rpx 0;
+}
+.festivalbox .name text {
+  font-size: 40rpx;
+  color: rgb(202, 127, 255);
+}
+.festivalbox .li{
+  margin: 10rpx 0;
+}
+.bb{
+  font-size: 40rpx;
+  font-style: italic;
+}
+.span1{
+  color: blue;
+}
+.span3{
+  font-size: 40rpx;
+  color: rgb(255, 127, 219);
+}
+.span4{
+  font-size: 40rpx;
+  color: red;
+}

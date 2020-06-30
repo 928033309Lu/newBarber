@@ -62,7 +62,10 @@
         </view> 
       </view>
 
+
+      <!-- 弹框类 -->
       <my-imgShow class="imgShow" wx:if="{{imglistSow}}" dataSrc="{{dataSrc}}" bind:myComeback="myComeback"></my-imgShow>
+      <my-redPacket></my-redPacket>
     </view>
   </view>
 </view>

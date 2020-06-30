@@ -10,8 +10,9 @@
       <view class='list'>
         <view class='ellipsis view'>
           <text class="iconfont icon-yingye1"></text>
-          <view class="con"> {{openTime ? '营业中 09:45 - 22:00' : '休息中'}}</view>
-          <view wx:if="{{openTime}}" class="money">￥15起</view>
+          <!-- <view class="con"> {{openTime ? '营业中 09:45 - 22:00' : '休息中'}}</view>
+          <view wx:if="{{openTime}}" class="money">￥15起</view> -->
+          <view class="con">09:45 - 22:00 </view>
         </view>
       </view>
       <view class='list' bindtap='onDiTu'>
